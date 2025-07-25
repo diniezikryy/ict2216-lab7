@@ -7,6 +7,8 @@ app.get('/timestamp', (req, res) => {
   res.json({ timestamp: getCurrentTimestamp() });
 });
 
+console.log('Server is starting...');
+
 // Helper function to get the current timestamp
 export function getCurrentTimestamp() {
   return new Date().toISOString();
